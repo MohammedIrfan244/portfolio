@@ -1,0 +1,169 @@
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+html::-webkit-scrollbar{
+    width: 5px;
+}
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #0dcaf0;
+    border-radius: 50px;
+}
+.section{
+    background-color:white;
+    padding-top:100px ;
+    padding-bottom: 20px;
+}
+.headings{
+    font-weight: 700;
+    text-align: center;
+}
+.subsections{
+    padding: 8% 1%;
+}
+.introduction,.skills{
+    min-height: 30%;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+    transition: 500ms ease-in-out;
+}
+.skillItems{
+    height:30px;
+    padding: 0 10px;
+    margin: 2%;
+    background-color: #0dcaf0;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    transition: 500ms ease-in-out;
+}
+.skillItems i{
+    position: relative;
+    top: 5px;
+}
+.skills:hover{
+    background-color: #0dcaf0;
+    color: white;
+    .skillItems{
+        background-color: white;
+        color: #0dcaf0;
+    }
+}
+.introduction:hover{
+    background-color: #0dcaf0;
+    color: white;
+}
+.projectItem{
+    height: 15vw;
+    width: 15vw;
+    padding:2%;
+    margin: 2%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    transition:500ms ease-in-out;
+} 
+.projectItem i{
+    font-size: 40px;
+    transition: 00ms ease-in-out;
+}
+.projectItem:hover{
+    background-color: #0dcaf0;
+    color: white;
+}
+.contactItems{
+    min-height: 25vw;
+    width: 30vw;
+    margin: 8% 0% 3% 0% ;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+    transition: 500ms ease-in-out;
+}
+#butt{
+    color: white;
+    transition: 500ms ease-in-out;
+}
+.contactItems:hover{
+    background-color: #0dcaf0;
+    color: white;
+    #butt{
+        background-color: white;
+        color: #0dcaf0;
+    }
+}
+.names{
+    font-size: 300%;
+    word-wrap: break-word;
+}
+.offcanvas-body ul li{
+    position: relative;
+}
+.offcanvas-body ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #0dcaf0;
+    border-radius: 10px;
+    position: absolute;
+    transition: 500ms ease-in-out;
+}
+.offcanvas-body ul li:hover::after{
+    width:100%;
+}
+img{
+    border-radius: 100%;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+    transition: 500ms ease-in-out;
+}
+img:hover{
+    transform: scale(1.02);
+}
+.footer a i{
+    transform: scale(1.15);
+    transition: 400ms ease-in-out;
+}
+.footer a i:hover{
+    transform: scale(1.35);
+}
+@media (max-width:1220px){
+    .projectItem{
+        height: 25vw;
+        width: 25vw;
+        padding-top: 30px;
+    }
+}
+@media (max-width:750px){
+    .projectItem{
+        height: 40vw;
+        width: 40vw;
+        padding-top: 30px;
+    }
+    .projectItem i{
+        font-size: 40px;
+    }
+    .contactItems{
+        width: 70vw;
+    }
+}
+@media (max-width:450px){
+    .projectItem{
+        height: 50vw;
+        width: 50vw;
+        padding-top: 30px;
+    }
+    .projectItem i{
+        font-size: 50px;
+    }
+}
